@@ -1,5 +1,7 @@
 import openai
-openai.api_key = "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" # 替换成您的API密钥
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 prompt = "Hello, how are you?" # 您的对话开始语
 
 prompt1 = """
